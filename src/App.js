@@ -21,11 +21,17 @@ function App() {
         });
 }, []);
 
+  function deleteTask(id) {
+    setTodos(todos.filter(todo => todo.id !== id))
+  }
+
   return (
     <div className="App container">
+      <div className="todo_content">
         {loading ? <Preloader /> :
-        <TodoList todos={todos} />
+        <TodoList todos={todos} deleteTask={deleteTask} />
         }
+      </div>
     </div>
   );
 }

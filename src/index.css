@@ -22,3 +22,19 @@ code {
   text-align: center;
   color: #ccc;
 }
+
+.todo_list {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  margin: 2rem 0;
+}
+
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
